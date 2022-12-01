@@ -15,8 +15,9 @@ public class MemberApp {
         //MemberService memberService = appConfig.memberService();
 
         // 스프링으로 이용
-        // 스프링은 ApplicationContext부터 시작된다.  ApplicationContext은 스프링 컨테이너라 하고 bean으로 등록된 객체를 관리한다.
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        // 스프링은 ApplicationContext부터 시작된다.  ApplicationContext은 스프링 컨테이너이며 인터페이스이다. bean으로 등록된 객체를 관리한다.
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class); // 이 클래스는 구현체이다.
+        // AppConfig.class를 구성정보로 지정
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class); // 메서드 이름을 적는다.
 
         Member member = new Member(1L, "memberA", Grade.VIP);  // cmd + option + v
