@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration // 어플리케이션의 설정 정보
 public class AppConfig { //구성영역만 바꾸면 된다 , ioc컨테이너 또는 di컨테이너 라고 한다.(어셈블러, 오브젝트 팩토리)
+    //팩토리 메서드를 이용한 방법
 
     @Bean  // 각 메서드에 bean 어노테이션을 달면 스프링컨테이너에 등록이 된다.
     //@Bean(name = "지정가능")
