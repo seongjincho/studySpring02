@@ -48,8 +48,8 @@ public class AutoAppConfig {
     // defined in class path resource [hello/core/AutoAppConfig.class], could not be registered.
     // A bean with that name has already been defined in file [/Users/a17647/Desktop/study/core/out/production/classes/hello/core/member/MemoryMemberRepository.class]
     // and overriding is disabled.
-    @Bean(name = "memoryMemberRepository")
+/*    @Bean(name = "memoryMemberRepository")
     MemberRepository memberRepository() {
         return new MemoryMemberRepository();
-    }
+    }*/
 }
