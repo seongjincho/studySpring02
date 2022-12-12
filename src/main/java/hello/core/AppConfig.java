@@ -52,8 +52,7 @@ public class AppConfig { //구성영역만 바꾸면 된다 , ioc컨테이너 �
     @Bean
     public OrderService orderService() {
         System.out.println("call AppConfig.orderService");
-        //return new OrderServiceImpl(memberRepository(), discountPolicy());
-        return null;
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
     // cmd + opt + m 으로 리팩토링 결과
     @Bean
