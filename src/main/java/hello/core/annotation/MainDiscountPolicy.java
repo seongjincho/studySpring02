@@ -9,5 +9,5 @@ import java.lang.annotation.*;
 @Inherited
 @Qualifier("mainDiscountPolicy")
 public @interface MainDiscountPolicy {
-    
+    //
 }
