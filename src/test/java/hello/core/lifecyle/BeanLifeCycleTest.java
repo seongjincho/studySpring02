@@ -21,7 +21,7 @@ public class BeanLifeCycleTest {
 
     @Configuration
     static class LifeCycleConfig {
-        @Bean(initMethod = "init", destroyMethod = "close") // 메소드명으로 등록
+        @Bean//(initMethod = "init", destroyMethod = "close") // 메소드명으로 등록
         // destroyMethod 특징: (inferred)(추론)이 디폴트다.=> close, shutdown라는 이름의 메서드를 자동으로 호출해준다.  종료 메서드를 추론한다. 공백으로 두면 추론 사용안함.
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
